@@ -158,7 +158,7 @@ public class GoldMedalController {
         List<Country> countries;
         switch (sortBy) {
             case "name":
-                // TODO: list of countries sorted by name in the given order
+                // list of countries sorted by name in the given order
                 countries = this.countryRepository.findAll();
                 if (ascendingOrder) {
                     countries.sort(Comparator.comparing(Country::getName));
@@ -167,7 +167,7 @@ public class GoldMedalController {
                 }
                 break;
             case "gdp":
-                // TODO: list of countries sorted by gdp in the given order
+                // list of countries sorted by gdp in the given order
                 countries = this.countryRepository.findAll();
                 if (ascendingOrder) {
                     countries.sort(Comparator.comparing(Country::getGdp));
@@ -176,7 +176,7 @@ public class GoldMedalController {
                 }
                 break;
             case "population":
-                // TODO: list of countries sorted by population in the given order
+                // list of countries sorted by population in the given order
                 countries = this.countryRepository.findAll();
                 if (ascendingOrder) {
                     countries.sort(Comparator.comparing(Country::getPopulation));
@@ -186,7 +186,7 @@ public class GoldMedalController {
                 break;
             case "medals":
             default:
-                // TODO: list of countries in any order you choose; for sorting by medal count, additional logic below will handle that
+                // list of countries in any order you choose; for sorting by medal count, additional logic below will handle that
                 countries = this.countryRepository.findAll();
                 if (ascendingOrder) {
                     countries.sort(Comparator.comparing(Country::getCode));
